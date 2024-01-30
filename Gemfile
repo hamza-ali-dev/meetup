@@ -49,7 +49,7 @@ gem 'cssbundling-rails', '~> 1.1'
 # Ruby wrapper for Terser JavaScript compressor [https://github.com/ahorek/terser-ruby]
 gem 'terser', '~> 1.1'
 
-
+gem 'pagy'
 
 group :development, :test do
   gem 'factory_bot_rails'
