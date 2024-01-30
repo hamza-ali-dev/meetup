@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+
+<div class='d-flex justify-content-between align-items-center gap-3'>
+  <h1>Groups</h1>
+
+  <div>
+    <%= link_to "Import Users", users_path, class: 'btn btn-secondary' %>
+    <%= link_to "New Group", new_group_path, class: 'btn btn-primary' %>
+  </div>
+</div>
+
+
+
+<div id="groups">
+  <%= render 'table', groups: @groups %>
+
+  <%== pagy_bootstrap_nav(@pagy) if @pagy.pages > 1 %>
+</div>

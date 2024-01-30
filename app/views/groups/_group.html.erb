@@ -1,0 +1,11 @@
+<tr>
+  <td><%= group.name %></td>
+
+  <td><%= render 'organizers', organizers: group.organizers_names %></td>
+
+  <td class='d-flex gap-2'>
+    <%= render 'show_button', group: group %>
+    <%= render 'edit_button', group: group %>
+    <%= render 'delete_button', group: group %>
+  </td>
+</tr>

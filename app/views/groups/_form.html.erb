@@ -1,0 +1,12 @@
+<%= form_with(model: group) do |form| %>
+  <%= render 'form_errors', resource: group %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name, class: 'form-control mb-3' %>
+  </div>
+
+  <div>
+    <%= form.submit 'Save' , class: 'btn btn-primary' %>
+  </div>
+<% end %>

@@ -1,0 +1,19 @@
+<p style="color: green"><%= notice %></p>
+
+<div class='d-flex align-items-center gap-2'>
+  <h3>
+    Name:
+  </h3>
+  <h4>
+    <%= @group.name %>
+  </h4>
+</div>
+
+<%= render 'group_users', group_users: @users_group, pagy: @pagy %>
+
+<div class='mt-3 d-flex gap-3'>
+  <%= render 'edit_button', group: @group %>
+  <%= render 'delete_button', group: @group %>
+
+  <%= link_to "Back to groups", groups_path, class: 'btn btn-light' %>
+</div>

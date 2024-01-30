@@ -1,0 +1,9 @@
+<div class='d-flex gap-3'>
+  <% if organizers.present? %>
+    <% organizers.each do |organizer| %>
+      <h4 class='badge bg-secondary'><%= organizer %></h4>
+    <% end %>
+  <% else %>
+    No Organizer!
+  <% end %>
+</div>

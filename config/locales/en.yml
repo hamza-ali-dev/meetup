@@ -30,11 +30,11 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  errors:
-    server: An error ocurred
-    failed_request_authenticity: Failed to validate authenticity of request. Please try again.
-    unauthorize: You are not authorized to perform this action.
-    missing_param: 'The following param is missing or the value is empty: %{param}'
+  group:
+    create_success: Group was successfully created.
+    update_success: Group was successfully updated.
+    destroy_success: Group was successfully destroyed.
+    destroy_failure: There were errors destroying group.
   user:
     upload_success: CSV file uploaded successfully.
     upload_file_not_selected: 'Please choose a file to upload.'
