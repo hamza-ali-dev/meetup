@@ -35,6 +35,6 @@ en:
     failed_request_authenticity: Failed to validate authenticity of request. Please try again.
     unauthorize: You are not authorized to perform this action.
     missing_param: 'The following param is missing or the value is empty: %{param}'
-    records_not_found: Unable to find the records
-    duplicate: Unable to insert duplicate records
-    page_not_found: No page found at that address
+  user:
+    upload_success: CSV file uploaded successfully.
+    upload_file_not_selected: 'Please choose a file to upload.'
